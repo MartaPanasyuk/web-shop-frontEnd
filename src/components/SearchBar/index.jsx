@@ -1,11 +1,10 @@
-
 const SearchBar = () => {
   return (
-    <form>
-        <input type="search"/>
-        <button>Search</button>
+    <form className="header-search">
+      <input type="search" />
+      <button>Search</button>
     </form>
-  )
-}
+  );
+};
 
-export { SearchBar }
+export { SearchBar };

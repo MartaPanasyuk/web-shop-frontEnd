@@ -2,16 +2,20 @@
   text-align: center;
 }
 
-.Container {
+.container {
   max-width: 980px;
   margin: 0 auto;
+}
+
+.header_navbar {
+  background-color: #8568ff;
 }
 
 .NavBar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8568FF;
+  background-color: #8568ff;
   height: 146px;
 }
 
@@ -27,19 +31,23 @@
 }
 
 .NavBar-Left ul {
-display: flex;
-list-style: none;
-justify-content: space-around;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
-
 
 a {
   padding-right: 10px;
   text-decoration: none;
 }
 
+a:hover {
+  color: black;
+}
+
 .NavBar-Icons {
   padding-left: 20px;
+  color: white;
 }
 
 .NavBar-Icons svg {

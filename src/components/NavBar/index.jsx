@@ -6,13 +6,21 @@ import { BiUser } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <div className="NavBar">
+    <div className="NavBar container">
       <div className="NavBar-Left">
-        <h1>The<span>Shop</span></h1>
+        <h1>
+          The<span>Shop</span>
+        </h1>
         <ul>
-          <li className="NavBar-Link"><Link to="/">Home</Link></li>
-          <li className="NavBar-Link"><Link to="/shop">Products</Link></li>
-          <li className="NavBar-Link"><Link to="/contacts">About Us</Link></li>
+          <li className="NavBar-Link">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="NavBar-Link">
+            <Link to="/shop">Products</Link>
+          </li>
+          <li className="NavBar-Link">
+            <Link to="/contacts">About Us</Link>
+          </li>
         </ul>
       </div>
       <div className="NavBar-Search">
@@ -20,7 +28,7 @@ const NavBar = () => {
       </div>
       <div className="NavBar-Icons">
         <BiUser />
-        <IoCartOutline/>
+        <IoCartOutline />
         <AiFillHeart />
       </div>
     </div>
@@ -28,4 +36,3 @@ const NavBar = () => {
 };
 
 export { NavBar };
-
