@@ -12,14 +12,15 @@ import {
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <h1>NavBar</h1>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/shop" element={<ProductPage />} />
-        <Route path="/details/:id" element={<ProductDetailsPage />} />
-        <Route path="/contacts" element={<AboutUsPage />} />
-      </Routes>
+      <div className="Container">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ProductPage />} />
+          <Route path="/details/:id" element={<ProductDetailsPage />} />
+          <Route path="/contacts" element={<AboutUsPage />} />
+        </Routes>
+      </div>
     </div>
   );
 }

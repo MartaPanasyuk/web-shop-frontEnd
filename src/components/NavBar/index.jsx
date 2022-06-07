@@ -1,13 +1,31 @@
 import { Link } from "react-router-dom";
+import { SearchBar } from "../SearchBar";
+import { IoCartOutline } from "react-icons/io5";
+import { AiFillHeart } from "react-icons/ai";
+import { BiUser } from "react-icons/bi";
 
 const NavBar = () => {
   return (
-    <div>
-      <Link to="/">Home</Link>
-      <Link to="/shop">Products</Link>
-      <Link to="/contacts">About Us</Link>
+    <div className="NavBar">
+      <div className="NavBar-Left">
+        <h1>The<span>Shop</span></h1>
+        <ul>
+          <li className="NavBar-Link"><Link to="/">Home</Link></li>
+          <li className="NavBar-Link"><Link to="/shop">Products</Link></li>
+          <li className="NavBar-Link"><Link to="/contacts">About Us</Link></li>
+        </ul>
+      </div>
+      <div className="NavBar-Search">
+        <SearchBar />
+      </div>
+      <div className="NavBar-Icons">
+        <BiUser />
+        <IoCartOutline/>
+        <AiFillHeart />
+      </div>
     </div>
   );
 };
 
 export { NavBar };
+

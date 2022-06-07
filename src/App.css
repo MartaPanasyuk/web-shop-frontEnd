@@ -1,3 +1,47 @@
 .App {
   text-align: center;
 }
+
+.Container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8568FF;
+  height: 146px;
+}
+
+.NavBar-Left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar-Left h1 {
+  color: white;
+  padding-right: 100px;
+}
+
+.NavBar-Left ul {
+display: flex;
+list-style: none;
+justify-content: space-around;
+}
+
+
+a {
+  padding-right: 10px;
+  text-decoration: none;
+}
+
+.NavBar-Icons {
+  padding-left: 20px;
+}
+
+.NavBar-Icons svg {
+  padding-left: 20px;
+}
