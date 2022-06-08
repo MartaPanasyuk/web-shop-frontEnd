@@ -1,0 +1,11 @@
+.Container {
+    justify-content: flex-start;
+}
+
+.ProductPage-Container { 
+    display: flex;
+}
+
+.ProductCards-Container {
+    flex-direction: column;
+}
