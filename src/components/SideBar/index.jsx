@@ -2,7 +2,7 @@ import "./style.css"
 
 const SideBar = ({categories}) => {
   return (
-    <div className="Container">
+    <div className="SideBar-Container">
       <div className="Categories-Container">
         <h4>Categories</h4>
         <ul>
