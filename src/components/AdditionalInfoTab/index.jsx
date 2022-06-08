@@ -1,8 +1,8 @@
 import "./style.css";
-const Review = () => {
+const AdditionalInfoTab = () => {
   return (
     <div className="Reviews_section Container">
-      <h1 className="reviews_title">Reviews</h1>
+      ADDITIONAL INFO
       <p className="review_text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odit
         veritatis ipsam corporis mollitia repellendus! Aperiam, deleniti
@@ -13,4 +13,4 @@ const Review = () => {
   );
 };
 
-export { Review };
+export { AdditionalInfoTab };

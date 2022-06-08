@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Review } from "../../components";
+import { Review, ProductInfo } from "../../components";
 
 const ProductDetailsPage = () => {
   const params = useParams();
@@ -54,7 +54,8 @@ const ProductDetailsPage = () => {
       ) : (
         <h2>Loading</h2>
       )}
-      <Review />
+      {/* <Review /> */}
+      <ProductInfo product={products} />
     </div>
   );
 };
