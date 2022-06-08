@@ -1,15 +1,10 @@
-.test {
-  text-align: left;
-}
-
 .product_deatils_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 40px;
   grid-row-gap: 0px;
-  text-align: left;
-  margin-top: 277px;
+  margin-top: 150px;
 }
 
 .picture_container {
@@ -24,6 +19,7 @@ img {
 
 .text_container {
   grid-area: 1 / 2 / 2 / 3;
+  text-align: left;
 }
 
 .product_title {
@@ -81,4 +77,10 @@ img {
   font-size: 19.6833px;
   line-height: 36px;
   color: #151875;
+}
+
+.navbar_links {
+  margin-top: 70px;
+  text-align: left;
+  margin-left: 45px;
 }

@@ -7,7 +7,7 @@ import "./style.css";
 
 const NavBar = () => {
   return (
-    <div className="NavBar container">
+    <div className="NavBar Container">
       <div className="NavBar-Left">
         <h1 className="Logo">
           The<span>Shop</span>

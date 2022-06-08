@@ -3,6 +3,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Review } from "../../components";
+
 const ProductDetailsPage = () => {
   const params = useParams();
   const [products, setProducts] = useState(null);
@@ -23,11 +25,12 @@ const ProductDetailsPage = () => {
     fetchProductById();
   }, []);
   return (
-    <div className="container">
-      <div className="test">
+    <div className="Container">
+      <div className="navbar_links">
         <Link to="/">Home</Link>
         <Link to="/shop">Products</Link>
       </div>
+
       {products ? (
         <div className="product_deatils_container">
           <div className="picture_container">
@@ -51,6 +54,7 @@ const ProductDetailsPage = () => {
       ) : (
         <h2>Loading</h2>
       )}
+      <Review />
     </div>
   );
 };
