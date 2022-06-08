@@ -1,17 +1,33 @@
 .info-container {
-  border: 1px solid black;
   margin-bottom: 50px;
+  margin-top: 150px;
 }
 
 .info-buttons {
   display: flex;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 30px;
+  justify-content: left;
+  margin-left: 20px;
+}
+
+.info-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #151875;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+}
+
+.info-btn:hover {
+  text-decoration-line: underline;
 }
 
 .info-content {
   margin-top: 20px;
-  border: 1px solid orange;
   min-height: 100px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 36px;
+  color: #a9acc6;
+  margin-left: 30px;
 }

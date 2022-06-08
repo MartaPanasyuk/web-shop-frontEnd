@@ -3,11 +3,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Review, ProductInfo } from "../../components";
+import { ProductInfo } from "../../components";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductDetailsPage = () => {
   const params = useParams();
-  const [products, setProducts] = useState(null);
+  const [product, setProducts] = useState(null);
 
   useEffect(() => {
     const fetchProductById = async () => {
@@ -31,31 +32,35 @@ const ProductDetailsPage = () => {
         <Link to="/shop">Products</Link>
       </div>
 
-      {products ? (
+      {product ? (
         <div className="product_deatils_container">
           <div className="picture_container">
             {" "}
-            <img src={products.mainImage} alt="product" />{" "}
+            <img src={product.mainImage} alt="product" />{" "}
           </div>
           <div className="text_container">
             {" "}
-            <h2 className="product_title">{products.title}</h2>
-            <p className="product_rating">Rating: {products.rating}</p>
+            <h2 className="product_title">{product.title}</h2>
+            <p className="product_rating">Rating: {product.rating}</p>
             <button className="review_btn">Add Review</button>
-            <p className="product_price">€{products.price}</p>
-            <p className="product_description">{products.description}</p>
-            <button className="cart_btn cart">Add to Cart</button>
+            <p className="product_price">€{product.price}</p>
+            <p className="product_description">{product.description}</p>
+            <div>
+              <button className="cart_btn cart">Add to Cart</button>
+              <button className="favorite_btn">
+                <AiOutlineHeart /> Favorite
+              </button>
+            </div>
             <p className="product_category">
               {" "}
-              Category: {products.category.title}
+              Category: {product.category.title}
             </p>
           </div>
         </div>
       ) : (
         <h2>Loading</h2>
       )}
-      {/* <Review /> */}
-      <ProductInfo product={products} />
+      <ProductInfo product={product} />
     </div>
   );
 };
