@@ -40,7 +40,13 @@ useEffect(() => {
   return (
     <div className="ProductPage-Container">
       <SideBar categories={categories}/>
-      <ProductCard />
+      <div className="ProductCards-Container">
+        {products.map(product => {
+          return (
+            <ProductCard title={product.title} price={product.price} description={product.description} rating={product.rating} image={product.mainImage}/>
+          )
+        })}
+      </div>
     </div>
   )
 }

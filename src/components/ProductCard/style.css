@@ -1,15 +1,15 @@
 .ProductCard {
     display: flex;
-    /* width: 25rem; */
-    /* flex: 1 0 auto; */
     padding: 2rem;
     height: 16rem;
     margin-left: 5rem;
     margin-top: 2rem;
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.15);
     border-radius: 1rem;
+    width: 75rem;
 }
 
 .ProductCard-Image {
-    height: 8rem;
+    height: 16rem;
+    margin-right: 2rem;
 }
