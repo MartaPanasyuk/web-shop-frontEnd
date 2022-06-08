@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { NavBar } from "./components";
+import { NavBar, Footer } from "./components";
 
 import {
   AboutUsPage,
@@ -21,6 +21,7 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetailsPage />} />
         <Route path="/contacts" element={<AboutUsPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

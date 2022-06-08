@@ -41,10 +41,20 @@ const ProductDetailsPage = () => {
             {" "}
             <h2 className="product_title">{products.title}</h2>
             <p className="product_rating">Rating: {products.rating}</p>
-            <button className="review_btn">Add Review</button>
+            <button
+              className="review_btn"
+              onClick={() => console.log("Add a review")}
+            >
+              Add Review
+            </button>
             <p className="product_price">€{products.price}</p>
             <p className="product_description">{products.description}</p>
-            <button className="cart_btn cart">Add to Cart</button>
+            <button
+              className="cart_btn cart"
+              onClick={() => console.log("Add to cart!")}
+            >
+              Add to Cart
+            </button>
             <p className="product_category">
               {" "}
               Category: {products.category.title}
