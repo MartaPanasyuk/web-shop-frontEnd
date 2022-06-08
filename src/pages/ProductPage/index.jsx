@@ -1,7 +1,8 @@
 import "./style.css"
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { SideBar } from "../../components";
+import { SideBar, ProductCard } from "../../components";
+
 
 export const ProductPage = () => {
 const [products, setProducts] = useState([]);
@@ -37,9 +38,9 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className="ProductPage-Container">
       <SideBar categories={categories}/>
-
+      <ProductCard />
     </div>
   )
 }
