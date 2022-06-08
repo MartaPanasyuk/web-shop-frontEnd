@@ -1,0 +1,17 @@
+.info-container {
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+.info-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info-content {
+  margin-top: 20px;
+  border: 1px solid orange;
+  min-height: 100px;
+}

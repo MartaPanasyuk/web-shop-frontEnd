@@ -10,7 +10,7 @@ const NavBar = () => {
     <div className="NavBar Container">
       <div className="NavBar-Left">
         <h1 className="Logo">
-          The<span>Shop</span>
+          The<span style={{ color: "black" }}>Shop</span>
         </h1>
         <ul>
           <li className="NavBar-Link">
