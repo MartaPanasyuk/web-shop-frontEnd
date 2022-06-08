@@ -3,7 +3,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { Review, ProductInfo } from "../../components";
+import { ProductInfo } from "../../components";
+import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductDetailsPage = () => {
   const params = useParams();
@@ -44,7 +45,12 @@ const ProductDetailsPage = () => {
             <button className="review_btn">Add Review</button>
             <p className="product_price">€{product.price}</p>
             <p className="product_description">{product.description}</p>
-            <button className="cart_btn cart">Add to Cart</button>
+            <div>
+              <button className="cart_btn cart">Add to Cart</button>
+              <button className="favorite_btn">
+                <AiOutlineHeart /> Favorite
+              </button>
+            </div>
             <p className="product_category">
               {" "}
               Category: {product.category.title}
@@ -54,7 +60,6 @@ const ProductDetailsPage = () => {
       ) : (
         <h2>Loading</h2>
       )}
-      {/* <Review /> */}
       <ProductInfo product={product} />
     </div>
   );

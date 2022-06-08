@@ -1,15 +1,5 @@
 .Reviews_section {
-  text-align: left;
-  margin-top: 50px;
-}
-.reviews_title {
-  font-size: 17px;
-  text-decoration-line: underline;
-  color: #151875;
-}
-
-.reviews_title:hover {
-  color: black;
+  padding-left: 30px;
 }
 
 .review_text {
