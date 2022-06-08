@@ -4,7 +4,7 @@
 
 .NavBar {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: #8568ff;
   height: 146px;
@@ -12,13 +12,12 @@
 
 .NavBar-Left {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.NavBar-Left h1 {
+.Logo {
   color: white;
-  padding-right: 100px;
+  text-align: left;
 }
 
 .NavBar-Left ul {

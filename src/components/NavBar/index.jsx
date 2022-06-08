@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className="NavBar container">
       <div className="NavBar-Left">
-        <h1>
+        <h1 className="Logo">
           The<span>Shop</span>
         </h1>
         <ul>
