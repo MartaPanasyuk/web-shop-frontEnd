@@ -10,8 +10,8 @@ const ProductInfo = (props) => {
   const { product } = props;
 
   const tabs = {
-    0: <DescriptionTab description={product.description} />,
-    1: <AdditionalInfoTab info={"blah"} />,
+    0: <DescriptionTab />, //description={product.description}
+    1: <AdditionalInfoTab />, //info={"blah"}
     2: <ReviewTab />,
   };
 
@@ -20,9 +20,15 @@ const ProductInfo = (props) => {
   return (
     <div className="info-container">
       <div className="info-buttons">
-        <button onClick={() => setActiveTab(0)}>Description</button>
-        <button onClick={() => setActiveTab(1)}>Additional Info</button>
-        <button onClick={() => setActiveTab(2)}>Reviews</button>
+        <button className="info-btn" onClick={() => setActiveTab(0)}>
+          Description
+        </button>
+        <button className="info-btn" onClick={() => setActiveTab(1)}>
+          Additional Info
+        </button>
+        <button className="info-btn" onClick={() => setActiveTab(2)}>
+          Reviews
+        </button>
       </div>
       <div className="info-content">{tabToRender}</div>
     </div>
