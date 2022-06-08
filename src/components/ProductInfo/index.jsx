@@ -12,7 +12,7 @@ const ProductInfo = (props) => {
   const tabs = {
     0: <DescriptionTab description={product.description} />,
     1: <AdditionalInfoTab info={"blah"} />,
-    2: <ReviewTab reviews={fakeReviews} />,
+    2: <ReviewTab />,
   };
 
   const tabToRender = tabs[activeTab]; //
