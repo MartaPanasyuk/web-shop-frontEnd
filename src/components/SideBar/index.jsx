@@ -29,6 +29,7 @@ const SideBar = ({categories}) => {
       <div className="Filter-Container">
       <h4>Price Filter</h4>
           <ul>
+              {/* Change the className */}
             <div className="Rating"><input type="checkbox"/><li>0.00 - 150.00</li></div>
             <div className="Rating"><input type="checkbox"/><li>150.00 - 350.00</li></div>
             <div className="Rating"><input type="checkbox"/><li>150.00 - 500.00</li></div>

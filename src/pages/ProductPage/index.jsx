@@ -43,7 +43,7 @@ const URL = "http://localhost:4000";
       <div className="ProductCards-Container">
         {products.map(product => {
           return (
-            <ProductCard title={product.title} price={product.price} description={product.description} rating={product.rating} image={product.mainImage} productId={product.id}/>
+            <ProductCard key={product.id} title={product.title} price={product.price} description={product.description} rating={product.rating} image={product.mainImage} productId={product.id}/>
           )
         })}
       </div>
