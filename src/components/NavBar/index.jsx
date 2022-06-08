@@ -3,6 +3,7 @@ import { SearchBar } from "../SearchBar";
 import { IoCartOutline } from "react-icons/io5";
 import { AiFillHeart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
+import "./style.css";
 
 const NavBar = () => {
   return (
