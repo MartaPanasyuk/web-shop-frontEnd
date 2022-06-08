@@ -10,31 +10,31 @@ const [categories, setCategories ] = useState([]);
 const URL = "http://localhost:4000";
 
 // Fetching all products
-useEffect(() => {
-  const fetchProducts = async (req, res) => {
-    try {
-      const allProducts = await axios.get(`${URL}/products`);
-      // console.log("Products: ", res.data);
-      setProducts(allProducts.data)
-    } catch (e) {
-      console.log(e.message)
+  useEffect(() => {
+    const fetchProducts = async (req, res) => {
+      try {
+        const allProducts = await axios.get(`${URL}/products`);
+        // console.log("Products: ", res.data);
+        setProducts(allProducts.data)
+      } catch (e) {
+        console.log(e.message)
+      }
     }
-  }
-  fetchProducts();
-}, [])
+    fetchProducts();
+  }, [])
 
 // Fetching all categories
-useEffect(() => {
-  const fetchCategories = async (req, res) => {
-    try {
-      const allCategories = await axios.get(`${URL}/categories`);
-      setCategories(allCategories.data);
-    } catch (e) {
-      console.log(e.message);
+  useEffect(() => {
+    const fetchCategories = async (req, res) => {
+      try {
+        const allCategories = await axios.get(`${URL}/categories`);
+        setCategories(allCategories.data);
+      } catch (e) {
+        console.log(e.message);
+      }
     }
-  }
-  fetchCategories();
-}, [])
+    fetchCategories();
+  }, [])
 
 
   return (
@@ -43,7 +43,7 @@ useEffect(() => {
       <div className="ProductCards-Container">
         {products.map(product => {
           return (
-            <ProductCard title={product.title} price={product.price} description={product.description} rating={product.rating} image={product.mainImage}/>
+            <ProductCard title={product.title} price={product.price} description={product.description} rating={product.rating} image={product.mainImage} productId={product.id}/>
           )
         })}
       </div>
