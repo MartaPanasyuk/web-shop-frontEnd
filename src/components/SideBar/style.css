@@ -1,0 +1,16 @@
+.Container {
+    width: 19rem;
+    justify-content: center;
+    display: flex;
+}
+
+.Category {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+}
