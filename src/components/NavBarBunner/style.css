@@ -1,0 +1,11 @@
+.NavBar_Bunner {
+  background-color: #8568ff;
+  height: 350px;
+  margin-top: -20px;
+}
+
+.NavBar-text {
+  padding-top: 40px;
+  text-align: left;
+  color: white;
+}
