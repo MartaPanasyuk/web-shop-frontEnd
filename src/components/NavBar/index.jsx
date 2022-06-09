@@ -28,7 +28,9 @@ const NavBar = () => {
         <SearchBar />
       </div>
       <div className="NavBar-Icons">
-        <BiUser />
+        <Link to="/user/login">
+          <BiUser />
+        </Link>
         <IoCartOutline />
         <AiFillHeart />
       </div>
