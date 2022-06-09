@@ -61,14 +61,31 @@ img {
   border: none;
   width: 134px;
   height: 39px;
-  left: 1050px;
-  top: 1388px;
-  background: #fb2e86;
+  background-color: #fb2e86;
   border-radius: 8px;
+}
+
+.cart_btn:hover {
+  background-color: red;
 }
 
 .cart {
   color: white;
+}
+.favorite_btn {
+  width: 134px;
+  height: 39px;
+  border: 2px solid #151875;
+  border-radius: 20px;
+  background-color: white;
+  color: #151875;
+  margin-left: 20px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.favorite_btn:hover {
+  background-color: #a9acc6;
 }
 
 .product_category {
@@ -79,7 +96,7 @@ img {
 }
 
 .navbar_links {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: left;
   margin-left: 45px;
 }

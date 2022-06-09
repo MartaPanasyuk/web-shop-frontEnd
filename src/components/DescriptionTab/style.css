@@ -1,8 +1,12 @@
 .Reviews_section {
   padding-left: 30px;
 }
+.description-title {
+  color: #151875;
+  font-size: 16px;
+}
 
-.review_text {
+.description-text {
   font-size: 15px;
   line-height: 36px;
   color: #a9acc6;
