@@ -9,3 +9,7 @@
 .ProductCards-Container {
     flex-direction: column;
 }
+
+.ProductPage-Container-Container {
+    flex-direction: column;
+}

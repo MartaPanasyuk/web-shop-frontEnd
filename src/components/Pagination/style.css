@@ -1,0 +1,16 @@
+.Pagination {
+    display: flex;
+    justify-content: right;
+    margin-right: 10rem;
+    padding-right: 10rem;
+}
+
+.Pagination button {
+    border: none;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.Pagination button:hover {
+    cursor: pointer;
+}
