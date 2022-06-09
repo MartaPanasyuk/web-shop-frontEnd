@@ -7,6 +7,7 @@ import {
   HomePage,
   ProductPage,
   ProductDetailsPage,
+  LoginPage,
 } from "./pages";
 
 function App() {
@@ -22,7 +23,9 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetailsPage />} />
         <Route path="/categories/:categoryId" element={<CategoryPage />} />
         <Route path="/contacts" element={<AboutUsPage />} />
+        <Route path="/user/login" element={<LoginPage />} />
       </Routes>
+
       <Footer />
     </div>
   );
