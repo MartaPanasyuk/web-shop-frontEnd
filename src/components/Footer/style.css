@@ -1,0 +1,29 @@
+.Footer {
+  background-color: #151875;
+}
+
+.footer-rows {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  max-width: 980px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.footer-title {
+  color: white;
+}
+
+.footer-text {
+  color: #a9acc6;
+}
+
+.footer-icons {
+  color: white;
+  margin-left: 10px;
+}
+
+.footer-t {
+  text-align: left;
+}
