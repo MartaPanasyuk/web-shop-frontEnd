@@ -2,8 +2,6 @@ import { useState } from "react";
 import { ReviewTab, AdditionalInfoTab, DescriptionTab } from "../";
 import "./styles.css";
 
-const fakeReviews = ["it's great!", "I really liked it", "Not what I expected"];
-
 const ProductInfo = (props) => {
   //console.log("our props", props);
   const [activeTab, setActiveTab] = useState(0); // 0 - 1 - 2

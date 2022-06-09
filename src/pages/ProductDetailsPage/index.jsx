@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { ProductInfo } from "../../components";
+import { ProductInfo, ReviewForm } from "../../components";
 import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductDetailsPage = () => {
@@ -25,7 +25,7 @@ const ProductDetailsPage = () => {
     };
     fetchProductById();
   }, []);
-  
+
   return (
     <div className="Container">
       <div className="navbar_links">
@@ -43,7 +43,9 @@ const ProductDetailsPage = () => {
             {" "}
             <h2 className="product_title">{product.title}</h2>
             <p className="product_rating">Rating: {product.rating}</p>
-            <button className="review_btn">Add Review</button>
+            <Link to="/reviews">
+              <button className="review_btn">Add Review</button>
+            </Link>
             <p className="product_price">€{product.price}</p>
             <p className="product_description">{product.description}</p>
             <div>

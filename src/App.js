@@ -8,10 +8,12 @@ import {
   ProductPage,
   ProductDetailsPage,
   LoginPage,
+  ReviewPage,
 } from "./pages";
 
 function App() {
   const [token, setToken] = useState(null);
+
   return (
     <div className="App">
       <div className="header_navbar">
@@ -28,6 +30,7 @@ function App() {
           path="/user/login"
           element={<LoginPage tokenSetter={setToken} />}
         />
+        <Route path="/reviews" element={<ReviewPage />} />
       </Routes>
 
       <Footer />
@@ -36,3 +39,5 @@ function App() {
 }
 
 export default App;
+
+//[review, setReview] = useState(null);
