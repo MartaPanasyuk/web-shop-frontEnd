@@ -5,13 +5,12 @@ import "./styles.css";
 const fakeReviews = ["it's great!", "I really liked it", "Not what I expected"];
 
 const ProductInfo = (props) => {
+  //console.log("our props", props);
   const [activeTab, setActiveTab] = useState(0); // 0 - 1 - 2
-
-  const { product } = props;
-
+  //const { product } = props;
   const tabs = {
-    0: <DescriptionTab />, //description={product.description}
-    1: <AdditionalInfoTab />, //info={"blah"}
+    0: <DescriptionTab description={props.product?.description} />, //
+    1: <AdditionalInfoTab info={"blah"} />,
     2: <ReviewTab />,
   };
 

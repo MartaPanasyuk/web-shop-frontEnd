@@ -5,3 +5,5 @@ export * from "./ReviewTab";
 export * from "./ProductInfo";
 export * from "./DescriptionTab";
 export * from "./AdditionalInfoTab";
+export * from "./Footer";
+export * from "./CategoryPage";

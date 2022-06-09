@@ -1,8 +1,8 @@
 import "./style.css";
-const DescriptionTab = () => {
+const DescriptionTab = (props) => {
   return (
     <div className="Reviews_section Container">
-      <p className="review_text">Here needs to be props</p>
+      <p className="review_text">{props.description}</p>
       <h3 className="description-title">More Details</h3>
       <p className="description-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero fuga

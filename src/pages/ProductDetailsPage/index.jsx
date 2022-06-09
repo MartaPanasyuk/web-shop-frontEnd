@@ -8,7 +8,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductDetailsPage = () => {
   const params = useParams();
-  const [product, setProducts] = useState(null);
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
     const fetchProductById = async () => {
@@ -17,8 +17,8 @@ const ProductDetailsPage = () => {
         const response = await axios.get(
           `http://localhost:4000/products/${productId}`
         );
-        setProducts(response.data);
-        console.log(response.data.category);
+        setProduct(response.data);
+        // console.log("smth", response.data);
       } catch (err) {
         console.log(err.message);
       }
@@ -65,3 +65,5 @@ const ProductDetailsPage = () => {
   );
 };
 export { ProductDetailsPage };
+
+//
