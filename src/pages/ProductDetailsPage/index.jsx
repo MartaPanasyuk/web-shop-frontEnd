@@ -24,6 +24,7 @@ const ProductDetailsPage = () => {
     };
     fetchProductById();
   }, []);
+  
   return (
     <div className="Container">
       <div className="navbar_links">
