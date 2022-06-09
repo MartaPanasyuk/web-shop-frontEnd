@@ -1,11 +1,11 @@
 import { LoginForm } from "../../components/LoginForm";
 import "./style.css";
 
-const LoginPage = () => {
+const LoginPage = (props) => {
   return (
     <div>
       <h2>Kekeke</h2>
-      <LoginForm />
+      <LoginForm tokenSetter={props.tokenSetter} />
     </div>
   );
 };

@@ -38,6 +38,8 @@ a:hover {
 .NavBar-Icons {
   padding-left: 20px;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .NavBar-Icons svg {

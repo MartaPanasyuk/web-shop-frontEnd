@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { NavBar, Footer, CategoryPage, NavBarBunner } from "./components";
-
+import { useState } from "react";
 import {
   AboutUsPage,
   HomePage,
@@ -11,10 +11,11 @@ import {
 } from "./pages";
 
 function App() {
+  const [token, setToken] = useState(null);
   return (
     <div className="App">
       <div className="header_navbar">
-        <NavBar />
+        <NavBar token={token} />
       </div>
       <NavBarBunner />
       <Routes>
@@ -23,7 +24,10 @@ function App() {
         <Route path="/products/:productId" element={<ProductDetailsPage />} />
         <Route path="/categories/:categoryId" element={<CategoryPage />} />
         <Route path="/contacts" element={<AboutUsPage />} />
-        <Route path="/user/login" element={<LoginPage />} />
+        <Route
+          path="/user/login"
+          element={<LoginPage tokenSetter={setToken} />}
+        />
       </Routes>
 
       <Footer />

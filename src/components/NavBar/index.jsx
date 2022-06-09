@@ -5,7 +5,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import "./style.css";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div className="NavBar Container">
       <div className="NavBar-Left">
@@ -28,9 +28,14 @@ const NavBar = () => {
         <SearchBar />
       </div>
       <div className="NavBar-Icons">
-        <Link to="/user/login">
-          <BiUser />
-        </Link>
+        {props.token ? (
+          <p>Logged in</p>
+        ) : (
+          <Link to="/user/login">
+            <BiUser />
+          </Link>
+        )}
+
         <IoCartOutline />
         <AiFillHeart />
       </div>
