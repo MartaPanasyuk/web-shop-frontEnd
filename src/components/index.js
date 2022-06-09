@@ -8,3 +8,4 @@ export * from "./DescriptionTab";
 export * from "./AdditionalInfoTab";
 export * from "./Footer";
 export * from "./CategoryPage";
+export * from "./NavBarBunner";
