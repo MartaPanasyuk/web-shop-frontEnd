@@ -9,3 +9,8 @@
   text-align: left;
   color: white;
 }
+
+.nav_picture {
+  width: 15rem;
+  z-index: 1;
+}
