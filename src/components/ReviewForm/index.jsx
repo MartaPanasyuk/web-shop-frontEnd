@@ -1,11 +1,14 @@
 import "./style.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const ReviewForm = (props) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState([]);
   const [productId, setProductId] = useState("");
+  const navigate = useNavigate();
+
   const submitComment = async (event) => {
     event.preventDefault();
     try {
@@ -14,7 +17,7 @@ const ReviewForm = (props) => {
         description: description,
         productId: productId,
       });
-      props.reviewSetter(postReview.data);
+      navigate(`/products/${productId}`);
       setName("");
       setDescription("");
       setProductId("");
