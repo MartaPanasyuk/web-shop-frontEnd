@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { NavBar, Footer, CategoryPage, NavBarBunner } from "./components";
+import { NavBar, Footer, NavBarBunner } from "./components";
 import { useState } from "react";
 import {
   AboutUsPage,
@@ -9,6 +9,7 @@ import {
   ProductDetailsPage,
   LoginPage,
   ReviewPage,
+  CategoryPage,
 } from "./pages";
 
 function App() {
@@ -32,7 +33,6 @@ function App() {
         />
         <Route path="/reviews" element={<ReviewPage />} />
       </Routes>
-
       <Footer />
     </div>
   );

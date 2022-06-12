@@ -4,7 +4,7 @@ import "./style.css";
 const LoginPage = (props) => {
   return (
     <div>
-      <h2>Kekeke</h2>
+      <h2>Login Form</h2>
       <LoginForm tokenSetter={props.tokenSetter} />
     </div>
   );

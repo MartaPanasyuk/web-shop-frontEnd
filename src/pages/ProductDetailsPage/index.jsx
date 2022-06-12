@@ -55,7 +55,6 @@ const ProductDetailsPage = () => {
               </button>
             </div>
             <p className="product_category">
-              {" "}
               Category: {product.category.title}
             </p>
           </div>

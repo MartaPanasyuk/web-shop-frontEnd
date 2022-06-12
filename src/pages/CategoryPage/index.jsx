@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { ProductCard } from "../ProductCard";
 
 const CategoryPage = () => {
   const { categoryId } = useParams();
@@ -23,7 +22,29 @@ const CategoryPage = () => {
   }, [categoryId]);
 
   return (
-    <div>{category ? <h1>{category.title}</h1> : <h3>Loading...</h3>}</div>
+    <div>
+      {category ? (
+        <div>
+          <div>
+            <h1>{category.title}</h1>
+            <div>
+              {category.products.map((product) => {
+                return (
+                  <div>
+                    <h2>{product.title}</h2>
+                    <p>{product.price}</p>
+                    <p>{product.description}</p>
+                    <img src={product.mainImage} alt="product" />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      ) : (
+        <h3>Loading...</h3>
+      )}
+    </div>
   );
 };
 

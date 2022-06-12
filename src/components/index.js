@@ -7,6 +7,6 @@ export * from "./ProductInfo";
 export * from "./DescriptionTab";
 export * from "./AdditionalInfoTab";
 export * from "./Footer";
-export * from "./CategoryPage";
 export * from "./NavBarBunner";
 export * from "./ReviewForm";
+export * from "./RegistrationForm";
