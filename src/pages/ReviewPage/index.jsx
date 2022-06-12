@@ -1,10 +1,9 @@
 import "./style.css";
-import { ReviewForm } from "../../components/ReviewForm";
+
 const ReviewPage = () => {
   return (
     <div className="form">
-      <h2>Kekekek</h2>
-      <ReviewForm />
+      <h2>If you want to add a review, please fill the form:</h2>
     </div>
   );
 };
